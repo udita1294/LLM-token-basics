@@ -28,8 +28,8 @@ for prompt in prompts:
     }
     messages = [message]
 
-    response = client.chat.completions.create(model=model, messages=messages)
+    response = client.chat.completions.create(model=model, messages=messages, max_tokens=50)
     answer = response.choices[0].message.content
     # print(answer)
     usage = response.usage
-    print(f"Prompt : {prompt} --> tokens --> ,Prompt tokens: {usage.prompt_tokens}, Completion tokens: {usage.completion_tokens}, Total tokens: {usage.total_tokens}")
+    print(f"Prompt : {prompt} --> tokens --> ,Prompt tokens: {usage.prompt_tokens}, Completion tokens: {usage.completion_tokens}, Total tokens: {usage.total_tokens}, Finish Reason: {response.choices[0].finish_reason}")
