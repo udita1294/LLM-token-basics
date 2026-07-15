@@ -97,14 +97,9 @@ Common values:
 
 ---
 
-## ⚙️ Technologies Used
+##  Technologies Used
 
 - Python
 - Groq Python SDK
 - python-dotenv
 - uv
-
-
-Computer Science Student | MERN Stack Developer | Generative AI Enthusiast
-
-GitHub: https://github.com/udita1294
